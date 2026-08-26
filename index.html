@@ -4,55 +4,68 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>NCL Electric Corp | 24/7 Suffolk & Nassau</title>
-<meta name="description" content="NCL Electric Corp. 24/7 electricians for Suffolk and Nassau. Call (631) 339-6227."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<meta name="description" content="NCL Electric Corp. 24/7 electricians Suffolk and Nassau. 10% off essential workers. Call (631) 339-6227."/>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 body{background:#07080A;color:#EDE8DC;font-family:Outfit,sans-serif}
-.glass{background:rgba(18,21,26,.75);backdrop-filter:blur(16px);border:1px solid rgba(237,232,220,.1)}
-.ico{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(18,21,26,.8);border:1px solid rgba(237,232,220,.12)}
-.ico.call{background:#E8B43A;color:#07080A}
-.ico svg{width:20px;height:20px}
-#arc{position:fixed;inset:0;pointer-events:none;z-index:8;opacity:.35}
+.glass{background:rgba(18,21,26,.8);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1)}
+.ico{display:inline-flex;align-items:center;gap:8px;height:52px;padding:0 16px;border-radius:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:13px;border:2px solid #fff}
+.ico svg{width:22px;height:22px}
+.ico.call{background:#E8B43A;color:#07080A;box-shadow:0 0 0 3px rgba(232,180,58,.4)}
+.ico.sms{background:#2F6BFF;color:#fff;box-shadow:0 0 0 3px rgba(47,107,255,.4)}
+.ico.wa{background:#1FBE57;color:#062;box-shadow:0 0 0 3px rgba(31,190,87,.4)}
+#arc{position:fixed;inset:0;pointer-events:none;z-index:8;opacity:.75;mix-blend-mode:screen}
 .serif{font-family:"Instrument Serif",serif}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.grid3 img{width:100%;height:200px;object-fit:cover;border-radius:12px}
 </style>
 </head>
-<body class="antialiased">
+<body>
 <canvas id="arc"></canvas>
-<div class="bg-[#E8B43A] text-[#07080A] text-center text-xs font-semibold py-2">24/7 · SUFFOLK & NASSAU · FREE ESTIMATES · 10% ESSENTIAL WORKERS</div>
+<div class="relative z-50 bg-[#1FBE57] text-[#062] text-center font-extrabold py-3 px-3">10% OFF ESSENTIAL WORKERS — cops, nurses, fire, EMTs, teachers. Bring ID.</div>
+<div class="bg-[#E8B43A] text-[#07080A] text-center text-xs font-bold py-2">24/7 · SUFFOLK & NASSAU · FREE ESTIMATES · (631) 339-6227</div>
 <header class="sticky top-0 z-50 glass">
-<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+<div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
 <div><div class="font-extrabold tracking-[.2em] text-sm">NCL ELECTRIC</div><div class="text-[10px] tracking-[.25em] text-[#9AA3B2]">CORP · LONG ISLAND</div></div>
-<div class="flex gap-2">
-<a class="ico call" href="tel:+16313396227" aria-label="Call" title="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.23a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92z"/></svg></a>
-<a class="ico" href="sms:+16313396227" aria-label="Text" title="Text"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
-<a class="ico" href="https://wa.me/16313396227" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.7L1 23l6.5-1.1A11 11 0 1 0 20.5 3.5z"/></svg></a>
+<div class="flex flex-wrap gap-2">
+<a class="ico call" href="tel:+16313396227"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.23a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+<a class="ico sms" href="sms:+16313396227"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text</a>
+<a class="ico wa" href="https://wa.me/16313396227" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.7L1 23l6.5-1.1A11 11 0 1 0 20.5 3.5z"/></svg>WhatsApp</a>
 </div></div></header>
-<main class="relative z-10 max-w-6xl mx-auto px-4 py-20">
-<p class="text-[#E8B43A] text-xs tracking-[.25em] uppercase">Central Islip · Open 24 hours</p>
+<main class="relative z-10 max-w-6xl mx-auto px-4 py-16">
+<p class="text-[#4DA3FF] text-xs tracking-[.25em] uppercase font-bold">Central Islip · Open 24 hours</p>
 <h1 class="serif text-5xl sm:text-7xl mt-4 leading-[.95]">Power back tonight.<br/><em class="text-[#E8B43A]">Long Island</em> done right.</h1>
-<p class="mt-6 max-w-xl text-[#9AA3B2] text-lg">NCL Electric Corp. Emergency, panels, EV chargers, new construction. Free estimate. (631) 339-6227.</p>
-<div class="mt-8 flex gap-2">
-<a class="ico call" href="tel:+16313396227" aria-label="Call"></a>
-<a class="ico" href="sms:+16313396227" aria-label="Text"></a>
-<a class="ico" href="https://wa.me/16313396227" aria-label="WhatsApp"></a>
+<p class="mt-6 max-w-xl text-[#9AA3B2] text-lg">Emergency, panels, EV chargers, new construction. Free estimate. <b class="text-[#1FBE57]">10% off essential workers.</b></p>
+<div class="mt-8 flex flex-wrap gap-2">
+<a class="ico call" href="tel:+16313396227"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.23a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+<a class="ico sms" href="sms:+16313396227"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text</a>
+<a class="ico wa" href="https://wa.me/16313396227" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.7L1 23l6.5-1.1A11 11 0 1 0 20.5 3.5z"/></svg>WhatsApp</a>
 </div>
-<form class="glass rounded-2xl p-6 mt-12 max-w-md" onsubmit="event.preventDefault();alert('Got it. If it is smoking call 631-339-6227 now.');">
-<p class="text-[#E8B43A] text-xs tracking-widest uppercase">Dispatch</p>
+<form class="glass rounded-2xl p-6 mt-12 max-w-md" onsubmit="event.preventDefault();alert('Got it. Smoking panel? Call 631-339-6227 now.');">
+<p class="text-[#4DA3FF] text-xs tracking-widest uppercase font-bold">Dispatch</p>
 <h2 class="serif text-3xl mt-1 mb-4">Get a tech on the way.</h2>
 <input required placeholder="Name" class="w-full mb-3 bg-[#07080A] border border-white/10 rounded px-3 py-2"/>
 <input required type="tel" placeholder="Phone" class="w-full mb-3 bg-[#07080A] border border-white/10 rounded px-3 py-2"/>
 <input placeholder="Town" class="w-full mb-3 bg-[#07080A] border border-white/10 rounded px-3 py-2"/>
 <button class="w-full bg-[#E8B43A] text-[#07080A] font-bold py-3 rounded">Send</button>
+<p class="text-xs text-[#1FBE57] mt-3 font-bold">Essential workers: 10% off. Say it on the call.</p>
 </form>
-<p class="mt-16 text-sm text-[#9AA3B2]">26 Poplar St, Central Islip, NY 11722 · NY DOS #6327447</p>
+<h2 class="serif text-4xl mt-20 mb-6">The work.</h2>
+<div class="grid3">
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=70" alt="Electrician at panel"/>
+<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=70" alt="Wiring"/>
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc4c7c357?auto=format&fit=crop&w=900&q=70" alt="Tools"/>
+<img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=70" alt="Power lines dusk"/>
+<img src="https://images.unsplash.com/photo-1581094794329-adc7bb0b50d0?auto=format&fit=crop&w=900&q=70" alt="Industrial electric"/>
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=70" alt="Night house lights"/>
+</div>
+<p class="mt-16 text-sm text-[#9AA3B2]">26 Poplar St, Central Islip, NY 11722 · (631) 339-6227 · NY DOS #6327447</p>
 </main>
 <script>
 const c=document.getElementById('arc'),x=c.getContext('2d');
-function fit(){c.width=innerWidth;c.height=innerHeight}
-fit();addEventListener('resize',fit);
-function bolt(a,b,d,e){let p=[{x:a,y:b},{x:d,y:e}],o=Math.hypot(d-a,e-b)*.3;for(let g=0;g<5;g++){for(let i=p.length-1;i>0;i--){const A=p[i-1],B=p[i];p.splice(i,0,{x:(A.x+B.x)/2+(Math.random()-.5)*o,y:(A.y+B.y)/2+(Math.random()-.5)*o})}o*=.5}x.beginPath();x.moveTo(p[0].x,p[0].y);p.forEach(q=>x.lineTo(q.x,q.y));x.stroke()}
-setInterval(()=>{x.clearRect(0,0,c.width,c.height);if(Math.random()>.4){x.strokeStyle='rgba(232,180,58,.8)';x.shadowColor='#E8B43A';x.shadowBlur=16;x.lineWidth=1.3;bolt(Math.random()*c.width,Math.random()*c.height*.3,Math.random()*c.width,c.height*.7)}},120);
+function fit(){c.width=innerWidth;c.height=innerHeight}fit();addEventListener('resize',fit);
+function bolt(a,b,d,e){let p=[{x:a,y:b},{x:d,y:e}],o=Math.hypot(d-a,e-b)*.32;for(let g=0;g<6;g++){for(let i=p.length-1;i>0;i--){const A=p[i-1],B=p[i];p.splice(i,0,{x:(A.x+B.x)/2+(Math.random()-.5)*o,y:(A.y+B.y)/2+(Math.random()-.5)*o})}o*=.52}x.beginPath();x.moveTo(p[0].x,p[0].y);p.forEach(q=>x.lineTo(q.x,q.y));x.stroke()}
+setInterval(()=>{x.clearRect(0,0,c.width,c.height);x.strokeStyle='rgba(90,200,255,1)';x.shadowColor='#7EC8FF';x.shadowBlur=28;x.lineWidth=2.6;for(let i=0;i<3;i++){if(Math.random()>.15)bolt(Math.random()*c.width,Math.random()*c.height*.25,Math.random()*c.width,c.height*(.45+Math.random()*.5))}},70);
 </script>
 </body></html>
