@@ -1,71 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>NCL Electric Corp | 24/7 Suffolk & Nassau</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-body{background:#07080A;color:#EDE8DC;font-family:system-ui,sans-serif}
-.glass{background:rgba(18,21,26,.88);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1)}
-.ico{width:56px;height:56px;display:inline-grid;place-items:center;border-radius:16px;border:2px solid #fff;font-size:22px;text-decoration:none}
-.ico.call{background:#E8B43A;color:#07080A}
-.ico.sms{background:#2F6BFF;color:#fff}
-.ico.wa{background:#1FBE57;color:#062}
-.logo{height:64px;background:#fff;border-radius:8px;padding:4px}
-.card img{width:100%;height:190px;object-fit:cover;background:#12151A}
-#arc{position:fixed;inset:0;pointer-events:none;z-index:8;mix-blend-mode:screen}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NCL Electric Corp | 24-Hour Residential Electricians Suffolk County NY</title>
+  <meta name="description" content="NCL Electric Corp — dedicated to quality work at an affordable price. Experienced, dependable residential electricians serving Suffolk and Nassau. Troubleshooting, new construction wiring, dimmer installations. Open 24 hours. Free estimates. 10% off for essential workers. Call (631) 339-6227." />
+  <meta name="keywords" content="NCL Electric, NCL Electric Corp, residential electricians Suffolk County NY, electrician Nassau County, 24 hour electrician Long Island, emergency electrician Suffolk, free electrical estimate, dimmer installation, new construction wiring" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="NCL Electric Corp" />
+  <meta name="geo.region" content="US-NY" />
+  <meta name="geo.placename" content="Suffolk County" />
+  <link rel="canonical" href="https://ncl-electric.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="NCL Electric Corp" />
+  <meta property="og:title" content="NCL Electric Corp | 24-Hour Residential Electricians Suffolk &amp; Nassau" />
+  <meta property="og:description" content="Quality work at an affordable price. Experienced, professional electricians for Suffolk and Nassau. Open 24 hours. Free estimates. Call (631) 339-6227." />
+  <meta property="og:url" content="https://ncl-electric.vercel.app/" />
+  <meta property="og:image" content="https://ncl-electric.vercel.app/og.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NCL Electric Corp | 24-Hour Residential Electricians" />
+  <meta name="twitter:description" content="Suffolk &amp; Nassau residential electricians. Open 24 hours. Free estimates. (631) 339-6227." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <meta name="theme-color" content="#0B1220" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "NCL Electric Corp",
+    "alternateName": "NCL Electric",
+    "description": "NCL Electric is dedicated to quality work at an affordable price. Experienced and professional electricians providing dependable service to Suffolk and Nassau customers. Handling projects ranging from troubleshooting to new construction wiring or even simple dimmer installations. Open 24 hours. Free estimates. 10% off for all essential workers.",
+    "url": "https://ncl-electric.vercel.app/",
+    "telephone": "+1-631-339-6227",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Suffolk County, NY" },
+      { "@type": "AdministrativeArea", "name": "Nassau County, NY" }
+    ],
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Residential electrical services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical troubleshooting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New construction wiring" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dimmer installations" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "24-hour residential electrical service" } }
+      ]
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#070B14",
+            panel: "#0E1624",
+            line: "#1C2A40",
+            amp: "#F5B942",
+            amp2: "#FFD56A",
+            foam: "#E8EEF6"
+          },
+          fontFamily: {
+            display: ["Barlow Condensed", "Impact", "sans-serif"],
+            sans: ["Manrope", "system-ui", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #070B14; color: #E8EEF6; }
+    .grid-bg {
+      background-image:
+        radial-gradient(1200px 500px at 80% -10%, rgba(245,185,66,.16), transparent 55%),
+        radial-gradient(900px 400px at 0% 20%, rgba(47,107,255,.10), transparent 50%),
+        linear-gradient(180deg, #070B14 0%, #0A1220 100%);
+    }
+    .bolt-line { background: linear-gradient(90deg, transparent, #F5B942, transparent); height: 1px; }
+    .glass { background: rgba(14, 22, 36, .72); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(16px); }
+  </style>
 </head>
-<body>
-<canvas id="arc"></canvas>
-<div class="relative z-50 bg-[#1FBE57] text-[#062] text-center font-extrabold py-3 px-3">10% OFF ESSENTIAL WORKERS — cops, nurses, fire, EMTs, teachers. Bring ID.</div>
-<div class="bg-[#E8B43A] text-[#07080A] text-center text-xs font-bold py-2">24/7 · SUFFOLK & NASSAU · FREE ESTIMATES · (631) 339-6227</div>
-<header class="sticky top-0 z-50 glass">
-<div class="max-w-6xl mx-auto px-4 py-4 flex flex-col items-center gap-3">
-<img id="logo" class="logo" alt="NCL Electric Corp"/>
-<div class="flex gap-3">
-<a class="ico call" href="tel:+16313396227" aria-label="Call">☎</a>
-<a class="ico sms" href="sms:+16313396227" aria-label="Text">✉</a>
-<a class="ico wa" href="https://wa.me/16313396227" aria-label="WhatsApp">W</a>
-</div></div></header>
-<main class="relative z-10 max-w-6xl mx-auto px-4 py-16 text-center">
-<img id="van" alt="NCL Electric truck" class="w-full max-h-72 object-cover rounded-2xl mb-10"/>
-<p class="text-xs tracking-[.25em] uppercase font-bold">Central Islip · Open 24 hours</p>
-<h1 class="text-5xl sm:text-7xl mt-4">Power back tonight.<br/><em class="text-[#E8B43A]">Long Island</em> done right.</h1>
-<p class="mt-6 text-[#9AA3B2]">NCL’s own jobs. Photos are embedded.</p>
-<div class="mt-8 flex justify-center gap-3">
-<a class="ico call" href="tel:+16313396227" aria-label="Call">☎</a>
-<a class="ico sms" href="sms:+16313396227" aria-label="Text">✉</a>
-<a class="ico wa" href="https://wa.me/16313396227" aria-label="WhatsApp">W</a>
-</div>
-<form class="glass rounded-2xl p-6 mt-12 max-w-md mx-auto text-left" onsubmit="event.preventDefault();alert('Call 631-339-6227');">
-<p class="text-xs tracking-widest uppercase font-bold text-white/70">Dispatch</p>
-<h2 class="text-3xl mt-1 mb-4">Get a tech on the way.</h2>
-<input required placeholder="Name" class="w-full mb-3 bg-[#07080A] border border-white/10 rounded px-3 py-2"/>
-<input required type="tel" placeholder="Phone" class="w-full mb-3 bg-[#07080A] border border-white/10 rounded px-3 py-2"/>
-<button class="w-full bg-[#E8B43A] text-[#07080A] font-bold py-3 rounded">Send</button>
-</form>
-<h2 class="text-4xl mt-20 mb-8">The work</h2>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
-<article class="card glass rounded-2xl overflow-hidden"><img id="ev" alt="Tesla Wall Connector"/><div class="p-4"><p class="text-[#E8B43A] text-xs uppercase">EV charger</p><h3 class="font-bold">Tesla Wall Connector</h3></div></article>
-<article class="card glass rounded-2xl overflow-hidden"><img id="panel" alt="Panel"/><div class="p-4"><p class="text-[#E8B43A] text-xs uppercase">Panel</p><h3 class="font-bold">Panel work</h3></div></article>
-<article class="card glass rounded-2xl overflow-hidden"><img id="van2" alt="Truck"/><div class="p-4"><p class="text-[#E8B43A] text-xs uppercase">24/7</p><h3 class="font-bold">Emergency dispatch</h3></div></article>
-</div>
-<p class="mt-16 text-sm text-[#9AA3B2]">26 Poplar St, Central Islip, NY 11722 · (631) 339-6227</p>
-</main>
-<script src="logo.js"></script>
-<script src="van.js"></script>
-<script src="ev.js"></script>
-<script src="panel.js"></script>
-<script>
-if(window.NCL_LOGO) document.getElementById('logo').src=NCL_LOGO;
-if(window.NCL_VAN){document.getElementById('van').src=NCL_VAN;document.getElementById('van2').src=NCL_VAN;}
-if(window.NCL_EV) document.getElementById('ev').src=NCL_EV;
-if(window.NCL_PANEL) document.getElementById('panel').src=NCL_PANEL;
-const c=document.getElementById('arc'),x=c.getContext('2d');
-function fit(){c.width=innerWidth;c.height=innerHeight}fit();addEventListener('resize',fit);
-function bolt(a,b,d,e){let p=[{x:a,y:b},{x:d,y:e}],o=Math.hypot(d-a,e-b)*.32;for(let g=0;g<6;g++){for(let i=p.length-1;i>0;i--){const A=p[i-1],B=p[i];p.splice(i,0,{x:(A.x+B.x)/2+(Math.random()-.5)*o,y:(A.y+B.y)/2+(Math.random()-.5)*o})}o*=.52}x.beginPath();x.moveTo(p[0].x,p[0].y);p.forEach(q=>x.lineTo(q.x,q.y));x.stroke()}
-setInterval(()=>{x.clearRect(0,0,c.width,c.height);x.strokeStyle='#fff';x.shadowColor='#fff';x.shadowBlur=30;x.lineWidth=2.8;for(let i=0;i<3;i++){if(Math.random()>.12)bolt(Math.random()*c.width,Math.random()*c.height*.25,Math.random()*c.width,c.height*(.45+Math.random()*.5))}},70);
-</script>
-</body></html>
+<body class="font-sans antialiased grid-bg min-h-screen">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-amp text-ink px-3 py-2">Skip to content</a>
+  <div class="bg-amp text-ink text-center text-[13px] sm:text-sm font-extrabold tracking-wide py-2.5 px-3">
+    FREE ESTIMATES · 10% OFF FOR ALL ESSENTIAL WORKERS · OPEN 24 HOURS
+  </div>
+  <header class="sticky top-0 z-50 glass">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-3 min-w-0">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#F5B942"/>
+          <path d="M22 6L10 22h9l-3 12 14-18h-9l3-10z" fill="#070B14"/>
+        </svg>
+        <div class="leading-tight">
+          <p class="font-display text-xl sm:text-2xl tracking-wide uppercase">NCL Electric Corp</p>
+          <p class="text-[11px] text-foam/60 uppercase tracking-[.16em]">Residential · Suffolk County NY</p>
+        </div>
+      </a>
+      <a href="tel:+16313396227" class="shrink-0 bg-amp hover:bg-amp2 text-ink font-extrabold px-4 py-2.5 rounded-lg text-sm sm:text-base">Call 631-339-6227</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 pt-16 pb-20 sm:pt-24 sm:pb-28">
+        <p class="text-amp font-extrabold tracking-[.28em] uppercase text-xs sm:text-sm">Open 24 hours · Suffolk &amp; Nassau</p>
+        <h1 class="font-display uppercase leading-[0.9] text-5xl sm:text-7xl lg:text-8xl mt-4 max-w-4xl">Residential electricians.<br /><span class="text-amp">Quality work.</span><br />Affordable price.</h1>
+        <p class="mt-6 max-w-2xl text-lg sm:text-xl text-foam/80">Selecting the right electrician for your project is an important decision. Here is why NCL is right for the job.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="tel:+16313396227" class="inline-flex items-center justify-center bg-amp hover:bg-amp2 text-ink font-extrabold px-6 py-4 rounded-xl text-lg">Call 1-631-339-6227</a>
+          <a href="#contact" class="inline-flex items-center justify-center border border-white/15 hover:border-amp text-foam font-bold px-6 py-4 rounded-xl text-lg">Get a free estimate</a>
+        </div>
+        <ul class="mt-10 flex flex-wrap gap-2 text-sm font-semibold uppercase tracking-wider text-foam/70">
+          <li class="border border-white/10 rounded-full px-3 py-1">Experienced</li>
+          <li class="border border-white/10 rounded-full px-3 py-1">Dependable</li>
+          <li class="border border-white/10 rounded-full px-3 py-1">Professional</li>
+          <li class="border border-white/10 rounded-full px-3 py-1">Reliable</li>
+        </ul>
+      </div>
+    </section>
+    <div class="bolt-line mx-4"></div>
+    <section class="max-w-6xl mx-auto px-4 py-16 sm:py-20" id="why">
+      <h2 class="font-display uppercase text-4xl sm:text-5xl">Why NCL is right for the job</h2>
+      <p class="mt-6 max-w-3xl text-lg text-foam/80 leading-relaxed">NCL Electric is dedicated to quality work at an affordable price. NCL electricians are experienced and professional, providing dependable service to our Suffolk Nassau customers. Handling projects ranging from troubleshooting to new construction wiring or even simple dimmer installations, our professional electricians will complete the tasks safely, quickly, and efficiently.</p>
+      <p class="mt-4 text-xl font-bold text-amp">Experienced. Dependable. Professional. Reliable electricians ready to help you.</p>
+    </section>
+    <section class="max-w-6xl mx-auto px-4 pb-16" id="services">
+      <h2 class="font-display uppercase text-4xl sm:text-5xl mb-8">Residential electrical work</h2>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <article class="glass rounded-2xl p-6">
+          <p class="text-amp text-xs font-extrabold tracking-[.2em] uppercase">Service</p>
+          <h3 class="font-display uppercase text-3xl mt-2">Troubleshooting</h3>
+          <p class="mt-3 text-foam/70">Find the fault. Fix it safely. Get power back without the runaround.</p>
+        </article>
+        <article class="glass rounded-2xl p-6">
+          <p class="text-amp text-xs font-extrabold tracking-[.2em] uppercase">Service</p>
+          <h3 class="font-display uppercase text-3xl mt-2">New construction wiring</h3>
+          <p class="mt-3 text-foam/70">Clean wiring for new builds and bigger jobs across Suffolk and Nassau.</p>
+        </article>
+        <article class="glass rounded-2xl p-6">
+          <p class="text-amp text-xs font-extrabold tracking-[.2em] uppercase">Service</p>
+          <h3 class="font-display uppercase text-3xl mt-2">Dimmer installations</h3>
+          <p class="mt-3 text-foam/70">Simple dimmer installs done quickly and efficiently.</p>
+        </article>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto px-4 pb-16" id="hours">
+      <div class="glass rounded-3xl p-8 sm:p-12 grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="font-display uppercase text-4xl sm:text-5xl">Open 24 hours</h2>
+          <p class="mt-4 text-foam/75 text-lg">Sunday through Saturday. Call anytime.</p>
+          <a href="tel:+16313396227" class="mt-6 inline-block bg-amp hover:bg-amp2 text-ink font-extrabold px-6 py-4 rounded-xl">631 339 6227</a>
+        </div>
+        <dl class="grid grid-cols-2 gap-3 text-sm">
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Sunday</dt><dd class="font-bold">Open 24 hours</dd></div>
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Monday</dt><dd class="font-bold">Open 24 hours</dd></div>
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Tuesday</dt><dd class="font-bold">Open 24 hours</dd></div>
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Wednesday</dt><dd class="font-bold">Open 24 hours</dd></div>
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Thursday</dt><dd class="font-bold">Open 24 hours</dd></div>
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Friday</dt><dd class="font-bold">Open 24 hours</dd></div>
+          <div class="border border-white/10 rounded-xl px-4 py-3"><dt class="text-foam/50">Saturday</dt><dd class="font-bold">Open 24 hours</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto px-4 pb-20" id="contact">
+      <div class="border border-amp/40 bg-amp/10 rounded-3xl p-8 sm:p-12">
+        <h2 class="font-display uppercase text-4xl sm:text-6xl">Contact us</h2>
+        <p class="mt-3 text-lg text-foam/80">Free estimates. 10% off for all essential workers.</p>
+        <p class="mt-6 font-display text-5xl sm:text-6xl text-amp tracking-wide"><a href="tel:+16313396227">631 339 6227</a></p>
+        <p class="mt-4 text-foam/60">Residential electricians serving Suffolk County NY and Nassau customers.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="tel:+16313396227" class="bg-amp hover:bg-amp2 text-ink font-extrabold px-5 py-3 rounded-xl">Call now</a>
+          <a href="sms:+16313396227" class="border border-white/20 font-bold px-5 py-3 rounded-xl">Text us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-foam/55 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+      <p>© <span id="y"></span> NCL Electric Corp. All rights reserved.</p>
+      <p>Residential Electricians · Suffolk County NY · Open 24 hours</p>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
