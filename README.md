@@ -1,9 +1,14 @@
 # NCL Electric Corp
 
-Live lander for NCL Electric Corp — 24/7 Suffolk & Nassau.
+24-hour residential electricians serving Suffolk and Nassau.
+
+Source copy taken only from the existing public site:
+https://sites.google.com/view/nclelectriccorp/home
 
 - Phone: (631) 339-6227
-- Address: 26 Poplar St, Central Islip, NY 11722
-- GitHub: https://github.com/wallstreetbranchmanager-tech/ncl-electric
+- Open 24 hours
+- Free estimates
+- 10% off for all essential workers
 
-Static HTML. Deployed on Vercel.
+Live: Vercel project `ncl-electric`
+GitHub: https://github.com/wallstreetbranchmanager-tech/ncl-electric
