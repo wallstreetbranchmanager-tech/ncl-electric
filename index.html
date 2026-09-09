@@ -8,6 +8,8 @@
 <link rel="canonical" href="https://ncl-electric.vercel.app/"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://images.pexels.com"/>
+<link rel="preconnect" href="https://images.unsplash.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;1,400&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Source Sans 3','system-ui','sans-serif'],serif:['Libre Baskerville','Georgia','serif']}}}}</script>
@@ -38,25 +40,18 @@
         </defs>
         <rect width="520" height="200" rx="12" fill="#FFFCF7"/>
         <rect width="520" height="200" rx="12" fill="url(#logoBulbs)" opacity=".55"/>
-
-        <!-- bolt running into the plug body -->
         <polygon fill="#D5121B" points="22,128 188,42 172,78 292,58 292,92 156,118 174,94"/>
-
-        <!-- NCL sitting on the bolt -->
         <g fill="#1A1714" font-family="Impact, Arial Black, sans-serif" font-size="58" font-weight="800">
           <text x="28" y="122" transform="rotate(-18 28 122)">N</text>
           <text x="74" y="106" transform="rotate(-18 74 106)">C</text>
           <text x="122" y="90" transform="rotate(-18 122 90)">L</text>
         </g>
-
-        <!-- two-prong plug; left face meets the bolt at x=292 -->
         <g transform="translate(292,36)">
           <rect x="0" y="8" width="118" height="92" rx="14" fill="#D5121B"/>
           <rect x="118" y="26" width="22" height="20" rx="3" fill="#C8CCD2"/>
           <rect x="118" y="62" width="22" height="20" rx="3" fill="#C8CCD2"/>
           <rect x="24" y="28" width="18" height="12" rx="2" fill="#fff" opacity=".32"/>
         </g>
-
         <text x="214" y="154" fill="#1A1714" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-style="italic">Electric Corp.</text>
         <text x="132" y="184" fill="#4A453F" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.6">631 339 6227</text>
       </svg>
@@ -76,28 +71,41 @@
     <p class="mt-5 max-w-2xl text-lg text-[#1C1916]/80 leading-relaxed">NCL Electric is dedicated to quality work at an affordable price. Experienced and professional electricians providing dependable service to Suffolk and Nassau customers.</p>
     <div class="mt-8 flex flex-wrap gap-3">
       <a href="tel:+16313396227" class="rounded-full bg-[#D5121B] text-white font-bold px-6 py-3 shadow-sm">Call 1-631-339-6227</a>
-      <a href="https://www.yelp.com/biz_photos/ncl-electric-central-islip" class="rounded-full border border-[#1C1916]/20 bg-white/80 font-semibold px-6 py-3">Job photos on Yelp</a>
+      <a href="https://www.yelp.com/biz_photos/ncl-electric-central-islip" class="rounded-full border border-[#1C1916]/20 bg-white/80 font-semibold px-6 py-3">Their real job photos on Yelp</a>
     </div>
   </section>
 
   <section class="pb-14">
     <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Here&rsquo;s why NCL is right for the job</h2>
     <p class="mt-3 max-w-2xl text-[#1C1916]/70">Handling projects ranging from troubleshooting to new construction wiring or even simple dimmer installations. Work completed safely, quickly, and efficiently.</p>
+    <p class="mt-2 text-xs text-[#1C1916]/50">Pictures below are free-use stock. They show the type of work. They are not NCL job sites.</p>
     <div class="mt-8 grid sm:grid-cols-3 gap-4">
-      <article class="rounded-2xl bg-white/90 border border-[#1C1916]/10 p-6">
-        <p class="text-[#D5121B] text-xs font-extrabold tracking-widest uppercase">Service</p>
-        <h3 class="mt-2 text-xl font-extrabold">Troubleshooting</h3>
-        <p class="mt-2 text-[#1C1916]/70 text-[15px] leading-relaxed">24-hour residential electrical troubleshooting.</p>
+      <article class="rounded-2xl bg-white/90 border border-[#1C1916]/10 overflow-hidden">
+        <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stock photo: testing a breaker panel" class="w-full h-40 object-cover" width="800" height="320"/>
+        <div class="p-6">
+          <p class="text-[#D5121B] text-xs font-extrabold tracking-widest uppercase">Service</p>
+          <h3 class="mt-2 text-xl font-extrabold">Troubleshooting</h3>
+          <p class="mt-2 text-[#1C1916]/70 text-[15px] leading-relaxed">24-hour residential electrical troubleshooting.</p>
+          <p class="mt-3 text-[11px] text-[#1C1916]/45">Stock, Pexels. Free use. Not an NCL panel.</p>
+        </div>
       </article>
-      <article class="rounded-2xl bg-white/90 border border-[#1C1916]/10 p-6">
-        <p class="text-[#D5121B] text-xs font-extrabold tracking-widest uppercase">Service</p>
-        <h3 class="mt-2 text-xl font-extrabold">New construction wiring</h3>
-        <p class="mt-2 text-[#1C1916]/70 text-[15px] leading-relaxed">New construction wiring for Suffolk and Nassau homes.</p>
+      <article class="rounded-2xl bg-white/90 border border-[#1C1916]/10 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80" alt="Stock photo: electrician wiring a wall box" class="w-full h-40 object-cover" width="800" height="320"/>
+        <div class="p-6">
+          <p class="text-[#D5121B] text-xs font-extrabold tracking-widest uppercase">Service</p>
+          <h3 class="mt-2 text-xl font-extrabold">New construction wiring</h3>
+          <p class="mt-2 text-[#1C1916]/70 text-[15px] leading-relaxed">New construction wiring for Suffolk and Nassau homes.</p>
+          <p class="mt-3 text-[11px] text-[#1C1916]/45">Stock, Unsplash License. Not an NCL job site.</p>
+        </div>
       </article>
-      <article class="rounded-2xl bg-white/90 border border-[#1C1916]/10 p-6">
-        <p class="text-[#D5121B] text-xs font-extrabold tracking-widest uppercase">Service</p>
-        <h3 class="mt-2 text-xl font-extrabold">Dimmer installations</h3>
-        <p class="mt-2 text-[#1C1916]/70 text-[15px] leading-relaxed">Simple dimmer installations completed quickly.</p>
+      <article class="rounded-2xl bg-white/90 border border-[#1C1916]/10 overflow-hidden">
+        <img src="https://images.pexels.com/photos/577514/pexels-photo-577514.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stock photo: a lit light bulb" class="w-full h-40 object-cover" width="800" height="320"/>
+        <div class="p-6">
+          <p class="text-[#D5121B] text-xs font-extrabold tracking-widest uppercase">Service</p>
+          <h3 class="mt-2 text-xl font-extrabold">Dimmer installations</h3>
+          <p class="mt-2 text-[#1C1916]/70 text-[15px] leading-relaxed">Simple dimmer installations completed quickly.</p>
+          <p class="mt-3 text-[11px] text-[#1C1916]/45">Stock lighting photo, Pexels. Free use. Not an NCL install.</p>
+        </div>
       </article>
     </div>
     <ul class="mt-6 flex flex-wrap gap-2 text-sm">
@@ -144,7 +152,7 @@
 <footer class="border-t border-[#1C1916]/10 bg-[#F6F1E8]/80">
   <div class="max-w-5xl mx-auto px-4 py-8 text-sm text-[#1C1916]/50">
     <p>NCL Electric Corp &middot; Central Islip, NY 11722 &middot; Serving Suffolk and Nassau</p>
-    <p class="mt-1">Same company facts as their Google Site and Yelp. Logo redrawn from the mark they posted on Yelp, Feb 23, 2022.</p>
+    <p class="mt-1">Service photos: Pexels and Unsplash free licenses. Not NCL job sites. Real work photos stay on their Yelp album.</p>
   </div>
 </footer>
 </body>
